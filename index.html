@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>My First Landingpage with javaScript</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+</head>
+<body>
+<div class="container" role="main">
+    <header class="header headerFixed" id="myHeader">
+        <div class="logoPlace">
+            <a href="index.html" aria-label="Logo">
+                <img
+                        src="images/logo-js.png"
+                        alt="Logo javaScript"
+                        class="logo">
+                <span class="logoFont"> RK Design</span>
+            </a>
+        </div>
+        <nav class="navbar" id="renderList">
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="content box">
+        <section id="section0" class="section box">
+            <div class="sectionFont">Section One</div>
+        </section>
+        <section id="section1" class="section box">
+            <div class="sectionFont">Section Two</div>
+        </section>
+        <section id="section2" class="section box">
+            <div class="sectionFont">Section Three</div>
+        </section>
+        <section id="section3" class="section box">
+            <div class="sectionFont">Section Four</div>
+        </section>
+    </div>
+    <button onclick="scrollToTop()" id="buttonTop" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    <footer class="footer box">HTML Site Design by Rebecca - All rights reserved.</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

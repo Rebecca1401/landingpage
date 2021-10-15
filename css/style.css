@@ -1,0 +1,90 @@
+@import url(https://use.fontawesome.com/releases/v5.13.0/css/all.css);
+@import "design.css";
+@import "mobileNav.css";
+
+.container {
+    display:grid;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+  "hd"
+  "main"
+  "ft";
+}
+
+.box {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-area: hd;
+    justify-content: center;
+    align-items: baseline;
+    padding: 20px;
+}
+
+.links {
+    text-align: center;
+    display: contents;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.content {
+    margin-top: 240px;
+    grid-area: main;
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 700px) and (max-width:900px) {
+    .container {
+        width: 90%;
+    }
+    .headerFixed {
+        max-width: 90%;
+    }
+}
+
+@media(min-width:900px) {
+    .container {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+    }
+
+    .first-content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .headerFixed {
+        max-width: 1000px;
+    }
+}
+
+@media(min-width:1100px) {
+    .container {
+        max-width: 1100px;
+    }
+    .first-content {
+        width: 50%;
+        margin: auto;
+    }
+
+    .headerFixed {
+        max-width: 1100px;
+    }
+}
